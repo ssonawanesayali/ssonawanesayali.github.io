@@ -419,12 +419,25 @@
                     ? `<ul class="chips chips--sm">${tech.map(t => `<li>${esc(t)}</li>`).join('')}</ul>`
                     : '';
 
+                // Cover art. Lazy so a long project list doesn't fetch every
+                // SVG up front.
+                const cover = isStr(p.image)
+                    ? `  <figure class="project__cover"><img src="${esc(p.image)}" alt="${esc(p.title)} cover" width="800" height="400" loading="lazy" /></figure>`
+                    : '';
+
+                // Skip longDescription when it just restates the one-liner.
+                const detail = (isStr(p.longDescription) && p.longDescription.trim() !== String(p.description || '').trim())
+                    ? `  <p class="project__detail">${esc(p.longDescription)}</p>`
+                    : '';
+
                 return [
                     '<article class="project">',
                     `  <div class="project__index">${idx}</div>`,
+                    cover,
                     metaHtml ? `  ${metaHtml}` : '',
                     `  <h3 class="project__title">${esc(p.title)}</h3>`,
                     isStr(p.description) ? `  <p class="project__desc">${esc(p.description)}</p>` : '',
+                    detail,
                     railHtml ? `  ${railHtml}` : '',
                     chips ? `  ${chips}` : '',
                     '</article>'
@@ -439,12 +452,21 @@
             if (!cats.length) { hide('#stack'); return; }
             const wrap = $('#stack .stack');
             if (!wrap) return;
-            wrap.innerHTML = cats.map(c => [
-                '<div class="stack__col">',
-                `  <h4>${esc(c.category)}</h4>`,
-                `  <ul class="stack__list">${arr(c.skills).filter(isStr).map(s => `<li>${esc(s)}</li>`).join('')}</ul>`,
-                '</div>'
-            ].join('\n')).join('\n');
+            wrap.innerHTML = cats.map((c, i) => {
+                const skills = arr(c.skills).filter(isStr);
+                const accent = isStr(c.color) ? ` style="--cat: ${esc(c.color)}"` : '';
+                return [
+                    `<div class="stack__col"${accent}>`,
+                    '  <div class="stack__head">',
+                    `    <span class="stack__idx">S/${String(i + 1).padStart(2, '0')}</span>`,
+                    `    <span class="stack__count">${skills.length}</span>`,
+                    '  </div>',
+                    `  <h4>${esc(c.category)}</h4>`,
+                    isStr(c.note) ? `  <p class="stack__note">${esc(c.note)}</p>` : '',
+                    `  <ul class="stack__list">${skills.map(s => `<li>${esc(s)}</li>`).join('')}</ul>`,
+                    '</div>'
+                ].filter(Boolean).join('\n');
+            }).join('\n');
         });
 
         // ---- Credentials (education + certifications + awards)

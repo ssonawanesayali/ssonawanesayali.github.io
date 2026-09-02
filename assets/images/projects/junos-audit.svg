@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img" aria-label="Junos Configuration Baseline Audit cover">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d0f12"/><stop offset="0.55" stop-color="#121519"/><stop offset="1" stop-color="#0a0b0d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.22" r="0.62">
+      <stop offset="0" stop-color="#B197FC" stop-opacity="0.16"/><stop offset="1" stop-color="#B197FC" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#edeae2" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <rect width="800" height="400" fill="url(#grid)"/>
+  <rect width="800" height="400" fill="url(#glow)"/>
+  <rect x="0" y="0" width="4" height="400" fill="#B197FC"/>
+
+  <g transform="translate(596 96)" opacity="0.9">
+      <circle cx="60" cy="22" r="9" fill="none" stroke="#B197FC" stroke-width="3"/>
+      <circle cx="20" cy="94" r="9" fill="none" stroke="#B197FC" stroke-width="3"/>
+      <circle cx="100" cy="94" r="9" fill="none" stroke="#B197FC" stroke-width="3"/>
+      <circle cx="60" cy="60" r="11" fill="#B197FC" opacity="0.9"/>
+      <path d="M60 31 v18 M52 68 L28 86 M68 68 L92 86" stroke="#B197FC" stroke-width="3" fill="none"/>
+  </g>
+
+  <text x="64" y="86" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" letter-spacing="3.4" fill="#B197FC">NETWORK SECURITY</text>
+  <text x="64" y="196" font-family="Instrument Serif, Iowan Old Style, Georgia, serif" font-size="46" fill="#ede8dc"><tspan x="64" dy="0">Junos Configuration</tspan><tspan x="64" dy="52">Baseline Audit</tspan></text>
+
+  <path d="M64 300 H736" stroke="#edeae2" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="64" y="336" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" letter-spacing="1.6" fill="#a09a8f">PYTHON · JUNOS · NETWORK SECURITY</text>
+  <text x="736" y="336" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" letter-spacing="1.6" fill="#6a665f" text-anchor="end">P/06</text>
+</svg>

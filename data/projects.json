@@ -1,22 +1,26 @@
 {
-  "_instructions": "Add your projects.",
+  "_instructions": "Add your projects. 'image' points at a cover SVG in assets/images/projects/.",
   "sectionTitle": "Featured Work",
   "projects": [
     {
-      "title": "aws-iam-keys-audit",
-      "description": "Comprehensive project exploring software design patterns",
-      "longDescription": "Comprehensive project exploring software design patterns",
-      "category": "Backend Development",
+      "title": "AWS IAM Key Rotation Auditor",
+      "repo": "aws-iam-keys-audit",
+      "description": "Scheduled Lambda that ages out AWS IAM access keys — deactivating them past a maximum age, then deleting them only after a grace window.",
+      "longDescription": "A CloudFormation stack deploying a Lambda that audits IAM access keys across the account. Keys older than MaxDaysAgeOfKey are set to inactive; they stay inactive for a further grace period before deletion, so a key that was rotated in error can still be recovered. Ships with a parameterised template, deploy scripts and a Lambda artifact build step.",
+      "category": "Cloud Security",
       "technologies": [
         "Python",
+        "AWS Lambda",
+        "CloudFormation",
+        "IAM",
         "Shell"
       ],
-      "icon": "fas fa-project-diagram",
-      "color": "#FF6B6B",
-      "image": "",
+      "icon": "fas fa-key",
+      "color": "#d4ff3a",
+      "image": "assets/images/projects/aws-iam-keys-audit.svg",
       "featured": true,
       "github": "https://github.com/ssonawanesayali/aws-iam-keys-audit",
-      "demo": "https://github.com/ssonawanesayali/aws-iam-keys-audit",
+      "demo": "",
       "links": {
         "github": "https://github.com/ssonawanesayali/aws-iam-keys-audit"
       },
@@ -26,20 +30,23 @@
       }
     },
     {
-      "title": "dockerfile-audit",
-      "description": "Interactive application built for continuous learning",
-      "longDescription": "Interactive application built for continuous learning",
-      "category": "Backend Development",
+      "title": "Dockerfile Policy Auditor",
+      "repo": "dockerfile-audit",
+      "description": "Policy-driven Dockerfile auditing aimed at semantics rather than lint — parsing every directive against a custom grammar to stop insecure images being built.",
+      "longDescription": "Parses Dockerfiles with a purpose-built grammar, deconstructs each directive, then evaluates them against a customisable rule policy. The focus is semantic rather than syntactic: catching what a linter passes but a security reviewer would not. Supports targeted and mass auditing across a fleet of Dockerfiles, with a generated report at the end.",
+      "category": "Container Security",
       "technologies": [
         "Python",
+        "Docker",
+        "Policy as Code",
         "TeX"
       ],
-      "icon": "fas fa-project-diagram",
+      "icon": "fab fa-docker",
       "color": "#4ECDC4",
-      "image": "",
+      "image": "assets/images/projects/dockerfile-audit.svg",
       "featured": true,
       "github": "https://github.com/ssonawanesayali/dockerfile-audit",
-      "demo": "https://github.com/ssonawanesayali/dockerfile-audit",
+      "demo": "",
       "links": {
         "github": "https://github.com/ssonawanesayali/dockerfile-audit"
       },
@@ -49,19 +56,22 @@
       }
     },
     {
-      "title": "iam_audit",
-      "description": "Practice application demonstrating full-stack development skills",
-      "longDescription": "Practice application demonstrating full-stack development skills",
-      "category": "Backend Development",
+      "title": "Cross-Account IAM User Audit",
+      "repo": "iam_audit",
+      "description": "Audits IAM users across every account in an AWS Organization through an assumed read-only role.",
+      "longDescription": "Collects IAM user data from multiple AWS accounts using access keys plus a local or cross-account ReadOnly role. Target accounts and role ARNs are driven from an INI config file, so one invocation covers an entire organisation rather than one account at a time.",
+      "category": "Cloud Security",
       "technologies": [
-        "Python"
+        "Python",
+        "AWS IAM",
+        "boto3"
       ],
-      "icon": "fas fa-project-diagram",
+      "icon": "fas fa-users-gear",
       "color": "#FFE66D",
-      "image": "",
+      "image": "assets/images/projects/iam_audit.svg",
       "featured": true,
       "github": "https://github.com/ssonawanesayali/iam_audit",
-      "demo": "https://github.com/ssonawanesayali/iam_audit",
+      "demo": "",
       "links": {
         "github": "https://github.com/ssonawanesayali/iam_audit"
       },
@@ -71,19 +81,23 @@
       }
     },
     {
-      "title": "iam-sso-audit-scripts",
-      "description": "Modern web application demonstrating clean code principles",
-      "longDescription": "Modern web application demonstrating clean code principles",
-      "category": "Backend Development",
+      "title": "IAM & Identity Center Audit Scripts",
+      "repo": "iam-sso-audit-scripts",
+      "description": "Three scripts covering IAM administrator enumeration and IAM Identity Center (SSO) assignment review, standalone or organisation-wide.",
+      "longDescription": "Audits IAM admins for a single account, the same across AWS Organizations, and IAM Identity Center assignments. Credentials resolve from a local profile or environment variables, so the scripts drop into an existing audit workflow without additional setup.",
+      "category": "Cloud Security",
       "technologies": [
-        "Python"
+        "Python",
+        "AWS IAM",
+        "IAM Identity Center",
+        "boto3"
       ],
-      "icon": "fas fa-project-diagram",
-      "color": "#A8DADC",
-      "image": "",
+      "icon": "fas fa-id-badge",
+      "color": "#FF6B6B",
+      "image": "assets/images/projects/iam-sso-audit-scripts.svg",
       "featured": true,
       "github": "https://github.com/ssonawanesayali/iam-sso-audit-scripts",
-      "demo": "https://github.com/ssonawanesayali/iam-sso-audit-scripts",
+      "demo": "",
       "links": {
         "github": "https://github.com/ssonawanesayali/iam-sso-audit-scripts"
       },
@@ -93,22 +107,24 @@
       }
     },
     {
-      "title": "good-cloud-practice",
-      "description": "Portfolio project showcasing development capabilities",
-      "longDescription": "Portfolio project showcasing development capabilities",
-      "category": "Backend Development",
+      "title": "GCP Non-Compliance Scanner",
+      "repo": "good-cloud-practice",
+      "description": "Scans a Google Cloud project for non-compliant configuration and renders the findings as a standalone HTML report.",
+      "longDescription": "Walks GCP services — BigQuery, Cloud DNS, Cloud SQL, App Engine, Compute Engine, Cloud Functions, Cloud Storage and KMS among them — checking each against good-practice configuration baselines. Results are written to a self-contained HTML report that can be handed to an engineering owner as-is.",
+      "category": "Cloud Security",
       "technologies": [
         "Python",
-        "CSS",
+        "Google Cloud Platform",
         "HTML",
+        "CSS",
         "JavaScript"
       ],
-      "icon": "fas fa-brain",
-      "color": "#B19CD9",
-      "image": "",
+      "icon": "fab fa-google",
+      "color": "#A8DADC",
+      "image": "assets/images/projects/good-cloud-practice.svg",
       "featured": true,
       "github": "https://github.com/ssonawanesayali/good-cloud-practice",
-      "demo": "https://github.com/ssonawanesayali/good-cloud-practice",
+      "demo": "",
       "links": {
         "github": "https://github.com/ssonawanesayali/good-cloud-practice"
       },
@@ -118,19 +134,22 @@
       }
     },
     {
-      "title": "junos-audit",
-      "description": "Practice application demonstrating full-stack development skills",
-      "longDescription": "Practice application demonstrating full-stack development skills",
-      "category": "Backend Development",
+      "title": "Junos Configuration Baseline Audit",
+      "repo": "junos-audit",
+      "description": "Audits Juniper Junos device configurations against a security and organisational baseline, emitting a colour-coded HTML report.",
+      "longDescription": "Reads Junos configurations in 'set' format and checks them against templated baselines covering NTP, SNMPv3, emergency accounts, and required versus unauthorised CLI commands. Reports the corrective action per device and colour-codes the output so exceptions are visible at a glance.",
+      "category": "Network Security",
       "technologies": [
-        "Python"
+        "Python",
+        "Junos",
+        "Network Security"
       ],
-      "icon": "fas fa-project-diagram",
-      "color": "#7FDBDA",
-      "image": "",
+      "icon": "fas fa-network-wired",
+      "color": "#B197FC",
+      "image": "assets/images/projects/junos-audit.svg",
       "featured": true,
       "github": "https://github.com/ssonawanesayali/junos-audit",
-      "demo": "https://github.com/ssonawanesayali/junos-audit",
+      "demo": "",
       "links": {
         "github": "https://github.com/ssonawanesayali/junos-audit"
       },
@@ -140,19 +159,24 @@
       }
     },
     {
-      "title": "config-rule-inspec-cis-audit-lambda",
-      "description": "Hands-on learning experience with modern frameworks",
-      "longDescription": "Hands-on learning experience with modern frameworks",
-      "category": "Backend Development",
+      "title": "CIS Compliance as an AWS Config Rule",
+      "repo": "config-rule-inspec-cis-audit-lambda",
+      "description": "Brings OS-level CIS compliance into AWS Config, backed by Systems Manager Run Command and Chef InSpec.",
+      "longDescription": "Wires the AWS-RunInspecChecks Systems Manager document into a custom AWS Config rule, so operating-system compliance is evaluated alongside every other config check rather than living in a separate tool. Includes the Lambda backend, the IAM roles for the function and the EC2 instances that trust it, and a CloudFormation template.",
+      "category": "Compliance Automation",
       "technologies": [
-        "Python"
+        "Python",
+        "AWS Config",
+        "Systems Manager",
+        "Chef InSpec",
+        "CloudFormation"
       ],
-      "icon": "fas fa-project-diagram",
-      "color": "#FF6B6B",
-      "image": "",
+      "icon": "fas fa-list-check",
+      "color": "#d4ff3a",
+      "image": "assets/images/projects/config-rule-inspec-cis-audit-lambda.svg",
       "featured": false,
       "github": "https://github.com/ssonawanesayali/config-rule-inspec-cis-audit-lambda",
-      "demo": "https://github.com/ssonawanesayali/config-rule-inspec-cis-audit-lambda",
+      "demo": "",
       "links": {
         "github": "https://github.com/ssonawanesayali/config-rule-inspec-cis-audit-lambda"
       },
@@ -162,19 +186,25 @@
       }
     },
     {
-      "title": "centralized-asset-management-system-with-compliance-self-audit-dashboard",
-      "description": "Personal project for exploring modern development practices",
-      "longDescription": "Personal project for exploring modern development practices",
-      "category": "Software Development",
+      "title": "Asset & Compliance Self-Audit Dashboard",
+      "repo": "centralized-asset-management-system-with-compliance-self-audit-dashboard",
+      "description": "Centralised asset dashboard combining security assessment, CIS-benchmark compliance checks and data-loss prevention.",
+      "longDescription": "Ansible playbooks handle host discovery, software inventory and Linux/Windows compliance collection, with Lynis and nmap doing assessment. Shell and Python scripts drive the automation, data classification and file monitoring that feed the dashboard, giving a near real-time view of compliance posture across the estate.",
+      "category": "Compliance Automation",
       "technologies": [
-        "Shell"
+        "Shell",
+        "Python",
+        "Ansible",
+        "CIS Benchmarks",
+        "Lynis",
+        "Nmap"
       ],
-      "icon": "fas fa-project-diagram",
+      "icon": "fas fa-gauge-high",
       "color": "#4ECDC4",
-      "image": "",
+      "image": "assets/images/projects/centralized-asset-management-system-with-compliance-self-audit-dashboard.svg",
       "featured": false,
       "github": "https://github.com/ssonawanesayali/centralized-asset-management-system-with-compliance-self-audit-dashboard",
-      "demo": "https://github.com/ssonawanesayali/centralized-asset-management-system-with-compliance-self-audit-dashboard",
+      "demo": "",
       "links": {
         "github": "https://github.com/ssonawanesayali/centralized-asset-management-system-with-compliance-self-audit-dashboard"
       },
@@ -184,19 +214,25 @@
       }
     },
     {
-      "title": "elk-siem-dashboard",
-      "description": "Practice repository for exploring advanced features",
-      "longDescription": "Practice repository for exploring advanced features",
-      "category": "Software Development",
+      "title": "ELK SIEM Dashboard",
+      "repo": "elk-siem-dashboard",
+      "description": "A SIEM on Elasticsearch, Logstash and Kibana for real-time log collection, threat detection and incident response.",
+      "longDescription": "Docker-composed ELK stack with Filebeat collection and a Logstash pipeline that parses security logs from firewalls, IDS, servers and applications. Kibana dashboards ship as a saved-objects export, and bootstrap scripts stand the whole stack up in a single command.",
+      "category": "Security Operations",
       "technologies": [
+        "Docker",
+        "Elasticsearch",
+        "Logstash",
+        "Kibana",
+        "Filebeat",
         "Shell"
       ],
-      "icon": "fas fa-project-diagram",
+      "icon": "fas fa-chart-line",
       "color": "#FFE66D",
-      "image": "",
+      "image": "assets/images/projects/elk-siem-dashboard.svg",
       "featured": false,
       "github": "https://github.com/ssonawanesayali/elk-siem-dashboard",
-      "demo": "https://github.com/ssonawanesayali/elk-siem-dashboard",
+      "demo": "",
       "links": {
         "github": "https://github.com/ssonawanesayali/elk-siem-dashboard"
       },
@@ -206,19 +242,22 @@
       }
     },
     {
-      "title": "cve-monitor",
-      "description": "Personal project for exploring modern development practices",
-      "longDescription": "Personal project for exploring modern development practices",
-      "category": "Backend Development",
+      "title": "CVE Monitor Dashboard",
+      "repo": "cve-monitor",
+      "description": "Pulls National Vulnerability Database data and tracks CVEs across a selectable date range.",
+      "longDescription": "Fetches vulnerability data from the NVD and renders it in an interactive dashboard filtered by date window. A companion build of the same project layers remediation tracking on top of the identical feed.",
+      "category": "Vulnerability Management",
       "technologies": [
-        "Python"
+        "Python",
+        "NVD API",
+        "Dashboard"
       ],
-      "icon": "fas fa-project-diagram",
-      "color": "#A8DADC",
-      "image": "",
+      "icon": "fas fa-bug",
+      "color": "#FF6B6B",
+      "image": "assets/images/projects/cve-monitor.svg",
       "featured": false,
       "github": "https://github.com/ssonawanesayali/cve-monitor",
-      "demo": "https://github.com/ssonawanesayali/cve-monitor",
+      "demo": "",
       "links": {
         "github": "https://github.com/ssonawanesayali/cve-monitor"
       },
@@ -228,67 +267,24 @@
       }
     },
     {
-      "title": "pulseboard-ops",
-      "description": "Portfolio project showcasing development capabilities",
-      "longDescription": "Portfolio project showcasing development capabilities",
-      "category": "Data Science",
-      "technologies": [
-        "JavaScript",
-        "HTML"
-      ],
-      "icon": "fas fa-brain",
-      "color": "#B19CD9",
-      "image": "",
-      "featured": false,
-      "github": "https://github.com/ssonawanesayali/pulseboard-ops",
-      "demo": "https://github.com/ssonawanesayali/pulseboard-ops",
-      "links": {
-        "github": "https://github.com/ssonawanesayali/pulseboard-ops"
-      },
-      "stats": {
-        "status": "Completed",
-        "year": "2026"
-      }
-    },
-    {
-      "title": "mern-chat-app",
-      "description": "Complete solution built from scratch for learning",
-      "longDescription": "Complete solution built from scratch for learning",
-      "category": "Software Development",
-      "technologies": [
-        "TypeScript"
-      ],
-      "icon": "fas fa-project-diagram",
-      "color": "#7FDBDA",
-      "image": "",
-      "featured": false,
-      "github": "https://github.com/ssonawanesayali/mern-chat-app",
-      "demo": "https://github.com/ssonawanesayali/mern-chat-app",
-      "links": {
-        "github": "https://github.com/ssonawanesayali/mern-chat-app"
-      },
-      "stats": {
-        "status": "Completed",
-        "year": "2026"
-      }
-    },
-    {
-      "title": "pipeline-guard",
-      "description": "Full-featured application built as a learning exercise",
-      "longDescription": "Full-featured application built as a learning exercise",
-      "category": "Backend Development",
+      "title": "Pipeline Guard",
+      "repo": "pipeline-guard",
+      "description": "A shift-left CI gate that scans container images and IaC in parallel on every PR, scores the findings, blocks the merge, and opens an auto-fix branch for the mechanical ones.",
+      "longDescription": "Packaged as a GitHub Action. Vulnerable base images and misconfigured infrastructure-as-code — open security groups, public buckets, missing encryption, over-permissive IAM — get caught before merge instead of in production. Findings are scored and posted back as a PR comment, and the mechanical fixes are pushed to a branch automatically. Ships with clean and deliberately vulnerable Docker and Kubernetes fixtures plus a runnable demo.",
+      "category": "DevSecOps",
       "technologies": [
         "Python",
         "Open Policy Agent",
         "HCL",
-        "Dockerfile"
+        "Docker",
+        "GitHub Actions"
       ],
-      "icon": "fas fa-project-diagram",
-      "color": "#FF6B6B",
-      "image": "",
+      "icon": "fas fa-shield-halved",
+      "color": "#A8DADC",
+      "image": "assets/images/projects/pipeline-guard.svg",
       "featured": false,
       "github": "https://github.com/ssonawanesayali/pipeline-guard",
-      "demo": "https://github.com/ssonawanesayali/pipeline-guard",
+      "demo": "",
       "links": {
         "github": "https://github.com/ssonawanesayali/pipeline-guard"
       },
@@ -298,25 +294,25 @@
       }
     },
     {
-      "title": "ai_soc",
-      "description": "Personal project for exploring modern development practices",
-      "longDescription": "Personal project for exploring modern development practices",
-      "category": "Backend Development",
+      "title": "AI-Augmented SOC",
+      "repo": "ai_soc",
+      "description": "Research-grade AI-assisted SOC: ML intrusion detection, local-LLM alert triage, retrieval over security knowledge, and attack-campaign simulation.",
+      "longDescription": "Combines trained IDS models, a local LLM for alert triage, retrieval over a security knowledge base, and Wazuh-based detection into one stack. Alertmanager, Cortex, Filebeat and Grafana are wired in, with dashboards for SOC overview, alert triage and ML inference. A launcher brings the full environment up in one step.",
+      "category": "Security Operations",
       "technologies": [
         "Python",
-        "HTML",
-        "Shell",
-        "PowerShell",
-        "Dockerfile",
-        "Zeek",
-        "Batchfile"
+        "Machine Learning",
+        "LLM",
+        "Wazuh",
+        "Grafana",
+        "Docker"
       ],
       "icon": "fas fa-brain",
-      "color": "#4ECDC4",
-      "image": "",
+      "color": "#B197FC",
+      "image": "assets/images/projects/ai_soc.svg",
       "featured": false,
       "github": "https://github.com/ssonawanesayali/ai_soc",
-      "demo": "https://github.com/ssonawanesayali/ai_soc",
+      "demo": "",
       "links": {
         "github": "https://github.com/ssonawanesayali/ai_soc"
       },
@@ -326,20 +322,23 @@
       }
     },
     {
-      "title": "sentinel-triage",
-      "description": "Modern web application demonstrating clean code principles",
-      "longDescription": "Modern web application demonstrating clean code principles",
-      "category": "Backend Development",
+      "title": "Sentinel Triage",
+      "repo": "sentinel-triage",
+      "description": "Cuts mean-time-to-triage on noisy SIEM alerts by correlating authentication events across users, hosts and IPs before an analyst sees them.",
+      "longDescription": "Tier-1 analysts lose most of a shift deciding whether ten failed logins are an attack or someone who forgot a password over a long weekend. This pipeline ingests labelled auth events, applies Sigma rules for brute force, impossible travel and account-lockout bursts, and scores what survives. A dataset generator and evaluation harness ship with it, so detection quality is measured rather than assumed.",
+      "category": "Security Operations",
       "technologies": [
         "Python",
-        "Dockerfile"
+        "Sigma",
+        "Docker",
+        "Detection Engineering"
       ],
-      "icon": "fas fa-project-diagram",
-      "color": "#FFE66D",
-      "image": "",
+      "icon": "fas fa-filter-circle-xmark",
+      "color": "#d4ff3a",
+      "image": "assets/images/projects/sentinel-triage.svg",
       "featured": false,
       "github": "https://github.com/ssonawanesayali/sentinel-triage",
-      "demo": "https://github.com/ssonawanesayali/sentinel-triage",
+      "demo": "",
       "links": {
         "github": "https://github.com/ssonawanesayali/sentinel-triage"
       },
@@ -349,17 +348,24 @@
       }
     },
     {
-      "title": "aws-iam-auditing",
-      "description": "Personal project for exploring modern development practices",
-      "longDescription": "Personal project for exploring modern development practices",
-      "category": "Development",
-      "technologies": [],
-      "icon": "fas fa-project-diagram",
-      "color": "#A8DADC",
-      "image": "",
+      "title": "AWS Organizations Credential Report",
+      "repo": "aws-iam-auditing",
+      "description": "Collects the IAM credential report from every active AWS Organizations account and emails one consolidated overview.",
+      "longDescription": "Assumes a role into each sub-account, generates and parses the IAM credential report, renders it through a Jinja2 template and mails the result — turning a per-account manual pull into a single scheduled report. Dockerised, with a Makefile and a test suite.",
+      "category": "Cloud Security",
+      "technologies": [
+        "Python",
+        "AWS Organizations",
+        "IAM",
+        "Jinja2",
+        "Docker"
+      ],
+      "icon": "fas fa-file-shield",
+      "color": "#4ECDC4",
+      "image": "assets/images/projects/aws-iam-auditing.svg",
       "featured": false,
       "github": "https://github.com/ssonawanesayali/aws-iam-auditing",
-      "demo": "https://github.com/ssonawanesayali/aws-iam-auditing",
+      "demo": "",
       "links": {
         "github": "https://github.com/ssonawanesayali/aws-iam-auditing"
       },
@@ -369,79 +375,81 @@
       }
     },
     {
-      "title": "get-audit-log",
-      "description": "Personal project for exploring modern development practices",
-      "longDescription": "Personal project for exploring modern development practices",
-      "category": "Development",
-      "technologies": [],
-      "icon": "fas fa-project-diagram",
-      "color": "#B19CD9",
-      "image": "",
-      "featured": false,
-      "github": "https://github.com/ssonawanesayali/get-audit-log",
-      "demo": "https://github.com/ssonawanesayali/get-audit-log",
-      "links": {
-        "github": "https://github.com/ssonawanesayali/get-audit-log"
-      },
-      "stats": {
-        "status": "Completed",
-        "year": "2026"
-      }
-    },
-    {
-      "title": "social-media-nlp",
-      "description": "Practice repository for exploring advanced features",
-      "longDescription": "Practice repository for exploring advanced features",
-      "category": "Development",
-      "technologies": [],
-      "icon": "fas fa-project-diagram",
-      "color": "#7FDBDA",
-      "image": "",
-      "featured": false,
-      "github": "https://github.com/ssonawanesayali/social-media-nlp",
-      "demo": "https://github.com/ssonawanesayali/social-media-nlp",
-      "links": {
-        "github": "https://github.com/ssonawanesayali/social-media-nlp"
-      },
-      "stats": {
-        "status": "Completed",
-        "year": "2026"
-      }
-    },
-    {
-      "title": "social-media-data-dashboard",
-      "description": "Full-featured application built as a learning exercise",
-      "longDescription": "Full-featured application built as a learning exercise",
-      "category": "Development",
-      "technologies": [],
-      "icon": "fas fa-project-diagram",
-      "color": "#FF6B6B",
-      "image": "",
-      "featured": false,
-      "github": "https://github.com/ssonawanesayali/social-media-data-dashboard",
-      "demo": "https://github.com/ssonawanesayali/social-media-data-dashboard",
-      "links": {
-        "github": "https://github.com/ssonawanesayali/social-media-data-dashboard"
-      },
-      "stats": {
-        "status": "Completed",
-        "year": "2026"
-      }
-    },
-    {
-      "title": "soc-automation-lab",
-      "description": "Full-featured application built as a learning exercise",
-      "longDescription": "Full-featured application built as a learning exercise",
-      "category": "Development",
-      "technologies": [],
-      "icon": "fas fa-project-diagram",
-      "color": "#4ECDC4",
-      "image": "",
+      "title": "SOC Automation Lab",
+      "repo": "soc-automation-lab",
+      "description": "An on-premise SOC automation lab wiring Wazuh, TheHive and Shuffle into a detect-analyse-respond workflow, exercised against Mimikatz activity.",
+      "longDescription": "Built on VirtualBox VMs with Sysmon-instrumented Windows endpoints. Wazuh handles detection, TheHive case management and Shuffle the response orchestration — run end to end against Mimikatz credential dumping. Includes per-component setup guides, the exported Shuffle workflow and network diagrams.",
+      "category": "Security Operations",
+      "technologies": [
+        "Wazuh",
+        "TheHive",
+        "Shuffle",
+        "Sysmon",
+        "VirtualBox"
+      ],
+      "icon": "fas fa-diagram-project",
+      "color": "#FFE66D",
+      "image": "assets/images/projects/soc-automation-lab.svg",
       "featured": false,
       "github": "https://github.com/ssonawanesayali/soc-automation-lab",
-      "demo": "https://github.com/ssonawanesayali/soc-automation-lab",
+      "demo": "",
       "links": {
         "github": "https://github.com/ssonawanesayali/soc-automation-lab"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "Pulseboard Ops",
+      "repo": "pulseboard-ops",
+      "description": "Full-stack operations dashboard — a React/Vite client, an Express server with separate unit and integration suites, and a shared SDK package.",
+      "longDescription": "Split into client, server and SDK workspaces, with distinct Jest configurations for unit and integration runs, ESLint on the server, and Dockerfiles for both halves. The repository has no README yet; this summary is drawn from its structure.",
+      "category": "Web Application",
+      "technologies": [
+        "JavaScript",
+        "React",
+        "Vite",
+        "Express",
+        "Jest",
+        "Docker"
+      ],
+      "icon": "fas fa-gauge",
+      "color": "#FF6B6B",
+      "image": "assets/images/projects/pulseboard-ops.svg",
+      "featured": false,
+      "github": "https://github.com/ssonawanesayali/pulseboard-ops",
+      "demo": "",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/pulseboard-ops"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "MERN Chat App",
+      "repo": "mern-chat-app",
+      "description": "MERN-stack chat application with a TypeScript React frontend and a Node backend, both containerised.",
+      "longDescription": "Separate frontend and backend workspaces, Vite and TypeScript on the client with SPA redirect rules for static deployment, and Docker ignore configuration on both sides. The repository has no README yet; this summary is drawn from its structure.",
+      "category": "Web Application",
+      "technologies": [
+        "TypeScript",
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Docker"
+      ],
+      "icon": "fas fa-comments",
+      "color": "#A8DADC",
+      "image": "assets/images/projects/mern-chat-app.svg",
+      "featured": false,
+      "github": "https://github.com/ssonawanesayali/mern-chat-app",
+      "demo": "",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/mern-chat-app"
       },
       "stats": {
         "status": "Completed",

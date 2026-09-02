@@ -1,19 +1,43 @@
 {
-  "_instructions": "Organize your skills with vibrant colors.",
+  "_instructions": "Skills grouped by discipline. 'note' is the one-line descriptor shown under each category heading.",
   "sectionTitle": "Skills & Technologies",
   "categories": [
     {
-      "category": "Programming Languages",
-      "icon": "fas fa-code",
-      "color": "#FF6B6B",
+      "category": "Audit & Assurance",
+      "note": "Planning through reporting on technology engagements",
+      "icon": "fas fa-clipboard-check",
+      "color": "#d4ff3a",
       "skills": [
-        "SQL"
+        "Technology Audit",
+        "Audit Planning & Fieldwork",
+        "Control Design Assessment",
+        "Operating Effectiveness Testing",
+        "SDLC Reviews",
+        "Audit Reporting",
+        "Issue Remediation"
       ]
     },
     {
-      "category": "Frameworks & Libraries",
-      "icon": "fas fa-toolbox",
+      "category": "IT Controls & Infrastructure",
+      "note": "The control layer, and the systems underneath it",
+      "icon": "fas fa-server",
       "color": "#4ECDC4",
+      "skills": [
+        "IT General Controls (ITGC)",
+        "Application Controls",
+        "IAM",
+        "Access Management",
+        "Change Management",
+        "Segregation of Duties (SoD)",
+        "System Architecture",
+        "Database & Operating System Fundamentals"
+      ]
+    },
+    {
+      "category": "Frameworks & Regulations",
+      "note": "Standards the testing is scoped against",
+      "icon": "fas fa-scale-balanced",
+      "color": "#FFE66D",
       "skills": [
         "SOX ITGC",
         "FDICIA",
@@ -24,9 +48,39 @@
       ]
     },
     {
-      "category": "Tools & Platforms",
-      "icon": "fas fa-wrench",
-      "color": "#FFE66D",
+      "category": "Security & Risk",
+      "note": "Assessing exposure across applications, networks and vendors",
+      "icon": "fas fa-shield-halved",
+      "color": "#FF6B6B",
+      "skills": [
+        "Technology Risk Assessment",
+        "Information Security Risk Assessment",
+        "Vulnerability Management",
+        "Application Security",
+        "Network Security Controls",
+        "Third-Party Risk Management (TPRM)"
+      ]
+    },
+    {
+      "category": "Data & Automation",
+      "note": "Turning evidence into analysis, and manual review into workflow",
+      "icon": "fas fa-diagram-project",
+      "color": "#A8DADC",
+      "skills": [
+        "SQL",
+        "Audit Analytics",
+        "Data Analytics",
+        "AI-Powered Automation",
+        "Workflow Automation",
+        "Power Apps",
+        "Power Automate"
+      ]
+    },
+    {
+      "category": "Platforms & Tooling",
+      "note": "GRC, ticketing and scanning platforms used day to day",
+      "icon": "fas fa-toolbox",
+      "color": "#B197FC",
       "skills": [
         "AuditBoard",
         "FieldGuide",
@@ -34,41 +88,7 @@
         "Jira",
         "Smartsheet",
         "Rapid7",
-        "Qualys",
-        "Power Apps",
-        "Power Automate"
-      ]
-    },
-    {
-      "category": "Technical Skills",
-      "icon": "fas fa-laptop-code",
-      "color": "#A8DADC",
-      "skills": [
-        "Technology Audit",
-        "IT General Controls (ITGC)",
-        "Application Controls",
-        "SDLC Reviews",
-        "Control Design Assessment",
-        "Operating Effectiveness Testing",
-        "Segregation of Duties (SoD)",
-        "Technology Risk Assessment",
-        "Information Security Risk Assessment",
-        "Audit Planning & Fieldwork",
-        "Audit Reporting",
-        "Issue Remediation",
-        "Third-Party Risk Management (TPRM)",
-        "IAM",
-        "Access Management",
-        "Change Management",
-        "Vulnerability Management",
-        "Application Security",
-        "Network Security Controls",
-        "System Architecture",
-        "Database & Operating System Fundamentals",
-        "Audit Analytics",
-        "AI-Powered Automation",
-        "Workflow Automation",
-        "Data Analytics"
+        "Qualys"
       ]
     }
   ]
