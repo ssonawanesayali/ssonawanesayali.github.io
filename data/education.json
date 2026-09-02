@@ -1,0 +1,54 @@
+{
+  "_instructions": "Add your education and certifications here.",
+  "sectionTitle": "Education & Certifications",
+  "certificationsTitle": "Certifications",
+  "education": [
+    {
+      "degree": "Master of Science in Information Technology & Management",
+      "school": "The University of Texas at Dallas",
+      "institution": "The University of Texas at Dallas",
+      "period": "",
+      "details": "",
+      "description": ""
+    },
+    {
+      "degree": "Bachelor of Engineering in Electronics & Telecommunications",
+      "school": "Savitribai Phule Pune University",
+      "institution": "Savitribai Phule Pune University",
+      "period": "",
+      "details": "",
+      "description": ""
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Certified Information Systems Auditor (CISA)",
+      "name": "Certified Information Systems Auditor (CISA)",
+      "issuer": "",
+      "date": "",
+      "icon": "fas fa-certificate",
+      "color": "#FFE66D",
+      "url": ""
+    },
+    {
+      "title": "CompTIA Security+ Certified",
+      "name": "CompTIA Security+ Certified",
+      "issuer": "CompTIA",
+      "date": "",
+      "icon": "fas fa-certificate",
+      "color": "#FFE66D",
+      "url": ""
+    },
+    {
+      "title": "AWS Certified Cloud Practitioner",
+      "name": "AWS Certified Cloud Practitioner",
+      "issuer": "AWS",
+      "date": "",
+      "icon": "fas fa-certificate",
+      "color": "#FFE66D",
+      "url": ""
+    }
+  ],
+  "awardsTitle": "Awards",
+  "awards": []
+}

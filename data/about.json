@@ -1,0 +1,40 @@
+{
+  "_instructions": "About section.",
+  "sectionTitle": "About Me",
+  "image": "assets/images/profile.jpg",
+  "paragraphs": [
+    "CISA-certified Technology Audit and Information Security Risk professional with experience in ITGC assessments, application controls, SDLC reviews, and security risk evaluations across financial services and enterprise environments.",
+    "Skilled in control testing, technology risk assessment, data analytics, and AI-powered automation to improve audit quality and drive remediation."
+  ],
+  "statistics": [
+    {
+      "icon": "fas fa-briefcase",
+      "value": "5+",
+      "label": "Years Experience",
+      "color": "#FF6B6B"
+    },
+    {
+      "icon": "fas fa-project-diagram",
+      "value": "1+",
+      "label": "Featured Projects",
+      "color": "#4ECDC4"
+    },
+    {
+      "icon": "fas fa-code",
+      "value": "41+",
+      "label": "Technologies",
+      "color": "#FFE66D"
+    },
+    {
+      "icon": "fas fa-building",
+      "value": "4",
+      "label": "Companies",
+      "color": "#A8DADC"
+    }
+  ],
+  "downloadCV": {
+    "text": "Download Resume",
+    "href": "assets/files/Resume.pdf",
+    "icon": "fas fa-download"
+  }
+}

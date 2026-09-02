@@ -1,0 +1,26 @@
+{
+  "_instructions": "Site-wide configuration and meta tags.",
+  "title": "SAYALI SANJAY SONAWANE | Technology Audit and Information Security Risk Professional",
+  "description": "CISA-certified Technology Audit and Information Security Risk professional with experience in ITGC assessments, application controls, SDLC reviews, and security risk evaluations across financial se...",
+  "keywords": "Technology Audit and Information Security Risk Professional, Portfolio, SAYALI SANJAY SONAWANE, SQL, SOX ITGC, FDICIA, PCI DSS, NIST, ISO 27001, HIPAA, AuditBoard",
+  "author": "SAYALI SANJAY SONAWANE",
+  "siteName": "SAYALI SANJAY SONAWANE",
+  "siteTitle": "SAYALI SANJAY SONAWANE | Technology Audit and Information Security Risk Professional",
+  "meta": {
+    "title": "SAYALI SANJAY SONAWANE | Technology Audit and Information Security Risk Professional",
+    "description": "CISA-certified Technology Audit and Information Security Risk professional with experience in ITGC assessments, application controls, SDLC reviews, and security risk evaluations across financial se...",
+    "author": "SAYALI SANJAY SONAWANE",
+    "keywords": "Technology Audit and Information Security Risk Professional, Portfolio, SAYALI SANJAY SONAWANE, SQL, SOX ITGC, FDICIA, PCI DSS, NIST, ISO 27001, HIPAA, AuditBoard"
+  },
+  "branding": {
+    "name": "SAYALI SANJAY SONAWANE",
+    "tagline": "Technology Audit and Information Security Risk Professional",
+    "logo": "/logo.png"
+  },
+  "settings": {
+    "year": 2026,
+    "enableAnimations": true,
+    "enableParticles": true,
+    "navbarScrollEffect": true
+  }
+}

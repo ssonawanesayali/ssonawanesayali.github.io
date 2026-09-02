@@ -1,0 +1,75 @@
+{
+  "_instructions": "Organize your skills with vibrant colors.",
+  "sectionTitle": "Skills & Technologies",
+  "categories": [
+    {
+      "category": "Programming Languages",
+      "icon": "fas fa-code",
+      "color": "#FF6B6B",
+      "skills": [
+        "SQL"
+      ]
+    },
+    {
+      "category": "Frameworks & Libraries",
+      "icon": "fas fa-toolbox",
+      "color": "#4ECDC4",
+      "skills": [
+        "SOX ITGC",
+        "FDICIA",
+        "PCI DSS",
+        "NIST",
+        "ISO 27001",
+        "HIPAA"
+      ]
+    },
+    {
+      "category": "Tools & Platforms",
+      "icon": "fas fa-wrench",
+      "color": "#FFE66D",
+      "skills": [
+        "AuditBoard",
+        "FieldGuide",
+        "CCH",
+        "Jira",
+        "Smartsheet",
+        "Rapid7",
+        "Qualys",
+        "Power Apps",
+        "Power Automate"
+      ]
+    },
+    {
+      "category": "Technical Skills",
+      "icon": "fas fa-laptop-code",
+      "color": "#A8DADC",
+      "skills": [
+        "Technology Audit",
+        "IT General Controls (ITGC)",
+        "Application Controls",
+        "SDLC Reviews",
+        "Control Design Assessment",
+        "Operating Effectiveness Testing",
+        "Segregation of Duties (SoD)",
+        "Technology Risk Assessment",
+        "Information Security Risk Assessment",
+        "Audit Planning & Fieldwork",
+        "Audit Reporting",
+        "Issue Remediation",
+        "Third-Party Risk Management (TPRM)",
+        "IAM",
+        "Access Management",
+        "Change Management",
+        "Vulnerability Management",
+        "Application Security",
+        "Network Security Controls",
+        "System Architecture",
+        "Database & Operating System Fundamentals",
+        "Audit Analytics",
+        "AI-Powered Automation",
+        "Workflow Automation",
+        "Data Analytics"
+      ]
+    }
+  ]
+}

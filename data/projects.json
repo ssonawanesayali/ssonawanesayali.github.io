@@ -1,0 +1,452 @@
+{
+  "_instructions": "Add your projects.",
+  "sectionTitle": "Featured Work",
+  "projects": [
+    {
+      "title": "aws-iam-keys-audit",
+      "description": "Comprehensive project exploring software design patterns",
+      "longDescription": "Comprehensive project exploring software design patterns",
+      "category": "Backend Development",
+      "technologies": [
+        "Python",
+        "Shell"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#FF6B6B",
+      "image": "",
+      "featured": true,
+      "github": "https://github.com/ssonawanesayali/aws-iam-keys-audit",
+      "demo": "https://github.com/ssonawanesayali/aws-iam-keys-audit",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/aws-iam-keys-audit"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "dockerfile-audit",
+      "description": "Interactive application built for continuous learning",
+      "longDescription": "Interactive application built for continuous learning",
+      "category": "Backend Development",
+      "technologies": [
+        "Python",
+        "TeX"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#4ECDC4",
+      "image": "",
+      "featured": true,
+      "github": "https://github.com/ssonawanesayali/dockerfile-audit",
+      "demo": "https://github.com/ssonawanesayali/dockerfile-audit",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/dockerfile-audit"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "iam_audit",
+      "description": "Practice application demonstrating full-stack development skills",
+      "longDescription": "Practice application demonstrating full-stack development skills",
+      "category": "Backend Development",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#FFE66D",
+      "image": "",
+      "featured": true,
+      "github": "https://github.com/ssonawanesayali/iam_audit",
+      "demo": "https://github.com/ssonawanesayali/iam_audit",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/iam_audit"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "iam-sso-audit-scripts",
+      "description": "Modern web application demonstrating clean code principles",
+      "longDescription": "Modern web application demonstrating clean code principles",
+      "category": "Backend Development",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#A8DADC",
+      "image": "",
+      "featured": true,
+      "github": "https://github.com/ssonawanesayali/iam-sso-audit-scripts",
+      "demo": "https://github.com/ssonawanesayali/iam-sso-audit-scripts",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/iam-sso-audit-scripts"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "good-cloud-practice",
+      "description": "Portfolio project showcasing development capabilities",
+      "longDescription": "Portfolio project showcasing development capabilities",
+      "category": "Backend Development",
+      "technologies": [
+        "Python",
+        "CSS",
+        "HTML",
+        "JavaScript"
+      ],
+      "icon": "fas fa-brain",
+      "color": "#B19CD9",
+      "image": "",
+      "featured": true,
+      "github": "https://github.com/ssonawanesayali/good-cloud-practice",
+      "demo": "https://github.com/ssonawanesayali/good-cloud-practice",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/good-cloud-practice"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "junos-audit",
+      "description": "Practice application demonstrating full-stack development skills",
+      "longDescription": "Practice application demonstrating full-stack development skills",
+      "category": "Backend Development",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#7FDBDA",
+      "image": "",
+      "featured": true,
+      "github": "https://github.com/ssonawanesayali/junos-audit",
+      "demo": "https://github.com/ssonawanesayali/junos-audit",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/junos-audit"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "config-rule-inspec-cis-audit-lambda",
+      "description": "Hands-on learning experience with modern frameworks",
+      "longDescription": "Hands-on learning experience with modern frameworks",
+      "category": "Backend Development",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#FF6B6B",
+      "image": "",
+      "featured": false,
+      "github": "https://github.com/ssonawanesayali/config-rule-inspec-cis-audit-lambda",
+      "demo": "https://github.com/ssonawanesayali/config-rule-inspec-cis-audit-lambda",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/config-rule-inspec-cis-audit-lambda"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "centralized-asset-management-system-with-compliance-self-audit-dashboard",
+      "description": "Personal project for exploring modern development practices",
+      "longDescription": "Personal project for exploring modern development practices",
+      "category": "Software Development",
+      "technologies": [
+        "Shell"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#4ECDC4",
+      "image": "",
+      "featured": false,
+      "github": "https://github.com/ssonawanesayali/centralized-asset-management-system-with-compliance-self-audit-dashboard",
+      "demo": "https://github.com/ssonawanesayali/centralized-asset-management-system-with-compliance-self-audit-dashboard",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/centralized-asset-management-system-with-compliance-self-audit-dashboard"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "elk-siem-dashboard",
+      "description": "Practice repository for exploring advanced features",
+      "longDescription": "Practice repository for exploring advanced features",
+      "category": "Software Development",
+      "technologies": [
+        "Shell"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#FFE66D",
+      "image": "",
+      "featured": false,
+      "github": "https://github.com/ssonawanesayali/elk-siem-dashboard",
+      "demo": "https://github.com/ssonawanesayali/elk-siem-dashboard",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/elk-siem-dashboard"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "cve-monitor",
+      "description": "Personal project for exploring modern development practices",
+      "longDescription": "Personal project for exploring modern development practices",
+      "category": "Backend Development",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#A8DADC",
+      "image": "",
+      "featured": false,
+      "github": "https://github.com/ssonawanesayali/cve-monitor",
+      "demo": "https://github.com/ssonawanesayali/cve-monitor",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/cve-monitor"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "pulseboard-ops",
+      "description": "Portfolio project showcasing development capabilities",
+      "longDescription": "Portfolio project showcasing development capabilities",
+      "category": "Data Science",
+      "technologies": [
+        "JavaScript",
+        "HTML"
+      ],
+      "icon": "fas fa-brain",
+      "color": "#B19CD9",
+      "image": "",
+      "featured": false,
+      "github": "https://github.com/ssonawanesayali/pulseboard-ops",
+      "demo": "https://github.com/ssonawanesayali/pulseboard-ops",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/pulseboard-ops"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "mern-chat-app",
+      "description": "Complete solution built from scratch for learning",
+      "longDescription": "Complete solution built from scratch for learning",
+      "category": "Software Development",
+      "technologies": [
+        "TypeScript"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#7FDBDA",
+      "image": "",
+      "featured": false,
+      "github": "https://github.com/ssonawanesayali/mern-chat-app",
+      "demo": "https://github.com/ssonawanesayali/mern-chat-app",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/mern-chat-app"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "pipeline-guard",
+      "description": "Full-featured application built as a learning exercise",
+      "longDescription": "Full-featured application built as a learning exercise",
+      "category": "Backend Development",
+      "technologies": [
+        "Python",
+        "Open Policy Agent",
+        "HCL",
+        "Dockerfile"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#FF6B6B",
+      "image": "",
+      "featured": false,
+      "github": "https://github.com/ssonawanesayali/pipeline-guard",
+      "demo": "https://github.com/ssonawanesayali/pipeline-guard",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/pipeline-guard"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "ai_soc",
+      "description": "Personal project for exploring modern development practices",
+      "longDescription": "Personal project for exploring modern development practices",
+      "category": "Backend Development",
+      "technologies": [
+        "Python",
+        "HTML",
+        "Shell",
+        "PowerShell",
+        "Dockerfile",
+        "Zeek",
+        "Batchfile"
+      ],
+      "icon": "fas fa-brain",
+      "color": "#4ECDC4",
+      "image": "",
+      "featured": false,
+      "github": "https://github.com/ssonawanesayali/ai_soc",
+      "demo": "https://github.com/ssonawanesayali/ai_soc",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/ai_soc"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "sentinel-triage",
+      "description": "Modern web application demonstrating clean code principles",
+      "longDescription": "Modern web application demonstrating clean code principles",
+      "category": "Backend Development",
+      "technologies": [
+        "Python",
+        "Dockerfile"
+      ],
+      "icon": "fas fa-project-diagram",
+      "color": "#FFE66D",
+      "image": "",
+      "featured": false,
+      "github": "https://github.com/ssonawanesayali/sentinel-triage",
+      "demo": "https://github.com/ssonawanesayali/sentinel-triage",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/sentinel-triage"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "aws-iam-auditing",
+      "description": "Personal project for exploring modern development practices",
+      "longDescription": "Personal project for exploring modern development practices",
+      "category": "Development",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "color": "#A8DADC",
+      "image": "",
+      "featured": false,
+      "github": "https://github.com/ssonawanesayali/aws-iam-auditing",
+      "demo": "https://github.com/ssonawanesayali/aws-iam-auditing",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/aws-iam-auditing"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "get-audit-log",
+      "description": "Personal project for exploring modern development practices",
+      "longDescription": "Personal project for exploring modern development practices",
+      "category": "Development",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "color": "#B19CD9",
+      "image": "",
+      "featured": false,
+      "github": "https://github.com/ssonawanesayali/get-audit-log",
+      "demo": "https://github.com/ssonawanesayali/get-audit-log",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/get-audit-log"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "social-media-nlp",
+      "description": "Practice repository for exploring advanced features",
+      "longDescription": "Practice repository for exploring advanced features",
+      "category": "Development",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "color": "#7FDBDA",
+      "image": "",
+      "featured": false,
+      "github": "https://github.com/ssonawanesayali/social-media-nlp",
+      "demo": "https://github.com/ssonawanesayali/social-media-nlp",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/social-media-nlp"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "social-media-data-dashboard",
+      "description": "Full-featured application built as a learning exercise",
+      "longDescription": "Full-featured application built as a learning exercise",
+      "category": "Development",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "color": "#FF6B6B",
+      "image": "",
+      "featured": false,
+      "github": "https://github.com/ssonawanesayali/social-media-data-dashboard",
+      "demo": "https://github.com/ssonawanesayali/social-media-data-dashboard",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/social-media-data-dashboard"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    },
+    {
+      "title": "soc-automation-lab",
+      "description": "Full-featured application built as a learning exercise",
+      "longDescription": "Full-featured application built as a learning exercise",
+      "category": "Development",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "color": "#4ECDC4",
+      "image": "",
+      "featured": false,
+      "github": "https://github.com/ssonawanesayali/soc-automation-lab",
+      "demo": "https://github.com/ssonawanesayali/soc-automation-lab",
+      "links": {
+        "github": "https://github.com/ssonawanesayali/soc-automation-lab"
+      },
+      "stats": {
+        "status": "Completed",
+        "year": "2026"
+      }
+    }
+  ]
+}

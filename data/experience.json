@@ -1,0 +1,57 @@
+{
+  "_instructions": "Add your work experience here. Copy the experience object for each job.",
+  "sectionTitle": "Professional Experience",
+  "experiences": [
+    {
+      "title": "Governance, Risk & Compliance Associate",
+      "company": "Weaver",
+      "period": "July 2025-Present",
+      "location": "",
+      "description": "Executed end-to-end technology audit and IT control testing across 10+ engagements covering IT SOX, PCI DSS, FDICIA, NIST, and ISO 27001, achieving 100% on-time delivery of audit milestones. Evaluated IT General Controls by analyzing workflows, approval logs, system-generated evidence, and underlying technology architectures supporting critical business processes. Performed application control and SDLC reviews by evaluating development-to-production workflows, identifying control gaps and strengthening control reliability. Leveraged AI and workflow automation to streamline audit testing and evidence evaluation processes, reducing manual review time by 67% and enabling faster completion of audit fieldwork. Communicated technology risks, control deficiencies, and remediation recommendations to business and technology stakeholders, accelerating issue resolution and improving governance visibility.",
+      "responsibilities": [
+        "Executed end-to-end technology audit and IT control testing across 10+ engagements covering IT SOX, PCI DSS, FDICIA, NIST, and ISO 27001, achieving 100% on-time delivery of audit milestones",
+        "Evaluated IT General Controls by analyzing workflows, approval logs, system-generated evidence, and underlying technology architectures supporting critical business processes",
+        "Performed application control and SDLC reviews by evaluating development-to-production workflows, identifying control gaps and strengthening control reliability",
+        "Leveraged AI and workflow automation to streamline audit testing and evidence evaluation processes, reducing manual review time by 67% and enabling faster completion of audit fieldwork",
+        "Communicated technology risks, control deficiencies, and remediation recommendations to business and technology stakeholders, accelerating issue resolution and improving governance visibility"
+      ]
+    },
+    {
+      "title": "IT Intern",
+      "company": "Mitsui E&P USA LLC",
+      "period": "May 2024-August 2024",
+      "location": "",
+      "description": "Led security awareness initiatives, strengthening employee security practices and reducing human-related security risk. Developed an automated asset-tracking solution using Power Apps and Power Automate, improving audit readiness and evidence visibility across 100+ technology assets.",
+      "responsibilities": [
+        "Led security awareness initiatives, strengthening employee security practices and reducing human-related security risk",
+        "Developed an automated asset-tracking solution using Power Apps and Power Automate, improving audit readiness and evidence visibility across 100+ technology assets"
+      ]
+    },
+    {
+      "title": "Governance, Risk & Compliance Analyst",
+      "company": "Newfold Digital",
+      "period": "February 2023-August 2023",
+      "location": "",
+      "description": "Executed risk-based testing of application and infrastructure controls aligned with SOX, PCI DSS, NIST, and ISO 27001 requirements, strengthening compliance posture and reducing remediation timelines. Developed risk metrics, dashboards, and reporting workflows in Jira and Smartsheet, enabling real-time visibility into control effectiveness. Collaborated with control owners and technology stakeholders to evaluate control effectiveness, validate remediation actions, and improve audit readiness.",
+      "responsibilities": [
+        "Executed risk-based testing of application and infrastructure controls aligned with SOX, PCI DSS, NIST, and ISO 27001 requirements, strengthening compliance posture and reducing remediation timelines",
+        "Developed risk metrics, dashboards, and reporting workflows in Jira and Smartsheet, enabling real-time visibility into control effectiveness",
+        "Collaborated with control owners and technology stakeholders to evaluate control effectiveness, validate remediation actions, and improve audit readiness"
+      ]
+    },
+    {
+      "title": "Information Security Engineer",
+      "company": "FIS Global",
+      "period": "May 2021-January 2023",
+      "location": "",
+      "description": "Assessed and validated 200+ security vulnerabilities using Rapid7, Qualys, CVSS scoring, and manual analysis, reducing false positives by 10% and improving risk reporting accuracy. Evaluated operating effectiveness of vulnerability management controls and prioritized remediation based on CVSS ratings, exploitability, and business impact. Performed PCI-aligned vulnerability validation and compliance support, ensuring controls met regulatory and audit requirements. Conducted incident investigations using log analysis, identifying root causes and strengthening preventive and detective control effectiveness. Assessed IAM controls and service account authentication, reducing access-related risk.",
+      "responsibilities": [
+        "Assessed and validated 200+ security vulnerabilities using Rapid7, Qualys, CVSS scoring, and manual analysis, reducing false positives by 10% and improving risk reporting accuracy",
+        "Evaluated operating effectiveness of vulnerability management controls and prioritized remediation based on CVSS ratings, exploitability, and business impact",
+        "Performed PCI-aligned vulnerability validation and compliance support, ensuring controls met regulatory and audit requirements",
+        "Conducted incident investigations using log analysis, identifying root causes and strengthening preventive and detective control effectiveness",
+        "Assessed IAM controls and service account authentication, reducing access-related risk"
+      ]
+    }
+  ]
+}
