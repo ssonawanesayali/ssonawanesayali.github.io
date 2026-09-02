@@ -350,6 +350,13 @@
                     ? `<ul class="chips">${tech.map(t => `<li>${esc(t)}</li>`).join('')}</ul>`
                     : '';
 
+                // Company logo chip. Logos sit on a light tile so dark
+                // monochrome marks stay legible against the page background.
+                const logo = isStr(j.logo) ? j.logo : '';
+                const logoHtml = logo
+                    ? `      <span class="role__logo"><img src="${esc(logo)}" alt="${esc(j.company || '')} logo" width="256" height="256" loading="lazy" /></span>`
+                    : '';
+
                 return [
                     '<article class="role">',
                     '  <aside class="role__meta">',
@@ -359,8 +366,13 @@
                     '  </aside>',
                     '  <div class="role__body">',
                     '    <header class="role__head">',
-                    `      <h3 class="role__company">${esc(j.company || '')}</h3>`,
-                    `      <p class="role__title">${esc(j.title || '')}</p>`,
+                    '      <div class="role__brand">',
+                    logoHtml,
+                    '        <div class="role__ident">',
+                    `          <h3 class="role__company">${esc(j.company || '')}</h3>`,
+                    `          <p class="role__title">${esc(j.title || '')}</p>`,
+                    '        </div>',
+                    '      </div>',
                     lede ? `      <p class="role__lede">${esc(lede)}</p>` : '',
                     '    </header>',
                     bullets ? `    <ul class="role__bullets">${bullets}</ul>` : '',

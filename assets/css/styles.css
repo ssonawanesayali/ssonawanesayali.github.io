@@ -806,6 +806,37 @@ main { position: relative; z-index: 1; }
     background: rgba(212, 255, 58, 0.06);
 }
 
+.role__brand {
+    display: flex;
+    align-items: center;
+    gap: clamp(14px, 1.6vw, 22px);
+    margin-bottom: 18px;
+}
+.role__ident { min-width: 0; }
+.role__ident .role__title { margin-bottom: 0; }
+.role__logo {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: clamp(48px, 5vw, 64px);
+    aspect-ratio: 1;
+    padding: 9px;
+    border-radius: 12px;
+    border: 1px solid var(--border-strong);
+    background: #f4f2ec;
+    box-shadow: 0 10px 24px -14px rgba(0, 0, 0, 0.8);
+    transition: transform .5s var(--ease), border-color .3s var(--ease);
+}
+.role__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.role:hover .role__logo {
+    transform: translateY(-2px);
+    border-color: var(--border-accent);
+}
+
 .role__company {
     font-family: var(--f-serif);
     font-weight: 400;
