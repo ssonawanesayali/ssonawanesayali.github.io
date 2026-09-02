@@ -337,9 +337,17 @@
                     ? `<div class="role__years"><span>${esc(start)}</span><span>—</span><span>${esc(end)}</span></div>`
                     : `<div class="role__years"><span>${esc(period)}</span></div>`;
 
-                // Skip the lede when it's just "<title> at <company>" boilerplate.
+                // Skip the lede when it's just "<title> at <company>" boilerplate,
+                // or when it's the responsibilities run together into a paragraph
+                // — printing both doubles the card, which reads badly on phones.
                 const boiler = `${j.title} at ${j.company}`;
-                const lede = (isStr(j.description) && j.description.trim() !== boiler) ? j.description : '';
+                const norm = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '');
+                const bulletsText = norm(arr(j.responsibilities).filter(isStr).join(' '));
+                const descText = norm(j.description);
+                const echoesBullets = bulletsText.length > 0 && descText.length > 0 &&
+                    (bulletsText === descText || bulletsText.indexOf(descText) === 0 || descText.indexOf(bulletsText) === 0);
+                const lede = (isStr(j.description) && j.description.trim() !== boiler && !echoesBullets)
+                    ? j.description : '';
 
                 const bullets = arr(j.responsibilities).filter(isStr)
                     .map(r => `<li><span class="role__pt">${esc(r)}</span></li>`)

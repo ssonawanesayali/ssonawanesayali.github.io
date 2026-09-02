@@ -1476,11 +1476,23 @@ main { position: relative; z-index: 1; }
     .role { grid-template-columns: 1fr; }
     .role__meta { position: static; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
     .role__meta .role__tag { margin-top: 0; }
+    /* Long company names need the full width next to a 44px chip. */
+    .role__brand { gap: 14px; margin-bottom: 14px; }
+    .role__logo { width: 44px; padding: 7px; border-radius: 10px; }
+    .role__company { font-size: 27px; }
 
     .project { grid-template-columns: 1fr; gap: 8px; }
     .project__index { padding-top: 0; }
-    .project__meta, .project__title, .project__desc, .project .chips, .project__metrics { grid-column: 1; }
+    /* Every child must be pinned to column 1 — one stray `grid-column: 2`
+       creates an implicit second column and squeezes the whole card. */
+    .project__meta, .project__title, .project__desc, .project .chips,
+    .project__metrics, .project__cover, .project__detail { grid-column: 1; }
     .project__metrics { flex-direction: column; gap: 14px; }
+    /* The 1080px rule lays the rail out as a row, where `flex: 1 1 130px`
+       is a width. Back in a column it becomes a 130px-tall row, so undo it. */
+    .project__metrics div { flex: 0 0 auto; }
+    .project__cover { margin-bottom: 18px; }
+    .project__detail { margin-top: 0; padding-left: 14px; }
 
     .stack { grid-template-columns: 1fr; }
     .contact { grid-template-columns: 1fr; }
