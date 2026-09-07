@@ -3,73 +3,49 @@
   "sectionTitle": "Skills & Technologies",
   "categories": [
     {
-      "category": "Audit & Assurance",
-      "note": "Planning through reporting on technology engagements",
+      "category": "Technology Audit & Controls",
+      "note": "Testing the control layer, end to end",
       "icon": "fas fa-clipboard-check",
       "color": "#d4ff3a",
       "skills": [
+        "Internal Audit",
         "Technology Audit",
-        "Audit Planning & Fieldwork",
-        "Control Design Assessment",
-        "Operating Effectiveness Testing",
-        "SDLC Reviews",
-        "Audit Reporting",
-        "Issue Remediation",
-        "Walkthroughs",
-        "Evidence Evaluation",
-        "Compliance Reporting"
-      ]
-    },
-    {
-      "category": "IT Controls & Infrastructure",
-      "note": "The control layer, and the systems underneath it",
-      "icon": "fas fa-server",
-      "color": "#4ECDC4",
-      "skills": [
         "IT General Controls (ITGC)",
         "Application Controls",
-        "IAM",
-        "Access Management",
-        "Change Management",
-        "Segregation of Duties (SoD)",
-        "System Architecture",
-        "Database & Operating System Fundamentals",
-        "Cloud Security (AWS, GCP)",
-        "Configuration Management"
+        "SDLC Reviews",
+        "Control Design Assessment",
+        "Operating Effectiveness Testing",
+        "Segregation of Duties (SoD)"
       ]
     },
     {
-      "category": "Frameworks & Regulations",
-      "note": "Standards the testing is scoped against",
+      "category": "Risk & Governance",
+      "note": "Scoping, assessing and reporting technology risk",
       "icon": "fas fa-scale-balanced",
-      "color": "#FFE66D",
-      "skills": [
-        "SOX ITGC",
-        "FDICIA",
-        "PCI DSS",
-        "NIST",
-        "ISO 27001",
-        "HIPAA",
-        "CIS Benchmarks",
-        "COSO"
-      ]
-    },
-    {
-      "category": "Security & Risk",
-      "note": "Assessing exposure across applications, networks and vendors",
-      "icon": "fas fa-shield-halved",
-      "color": "#FF6B6B",
+      "color": "#4ECDC4",
       "skills": [
         "Technology Risk Assessment",
         "Information Security Risk Assessment",
+        "Audit Planning & Fieldwork",
+        "Audit Reporting",
+        "Issue Remediation",
+        "Third-Party Risk Management (TPRM)"
+      ]
+    },
+    {
+      "category": "Security & Infrastructure",
+      "note": "Access, change and the systems underneath them",
+      "icon": "fas fa-shield-halved",
+      "color": "#FF6B6B",
+      "skills": [
+        "IAM",
+        "Access Management",
+        "Change Management",
         "Vulnerability Management",
         "Application Security",
         "Network Security Controls",
-        "Third-Party Risk Management (TPRM)",
-        "CVSS Scoring",
-        "Incident Investigation",
-        "Log Analysis",
-        "Root Cause Analysis"
+        "System Architecture",
+        "Database & Operating System Fundamentals"
       ]
     },
     {
@@ -79,20 +55,31 @@
       "color": "#A8DADC",
       "skills": [
         "SQL",
+        "Python",
         "Audit Analytics",
-        "Data Analytics",
         "AI-Powered Automation",
         "Workflow Automation",
-        "Power Apps",
-        "Power Automate",
-        "Python",
-        "Dashboards & Reporting",
-        "Process Automation"
+        "Data Analytics"
       ]
     },
     {
-      "category": "Platforms & Tooling",
-      "note": "GRC, ticketing and scanning platforms used day to day",
+      "category": "Frameworks & Compliance",
+      "note": "Standards the testing is scoped against",
+      "icon": "fas fa-book-open",
+      "color": "#FFE66D",
+      "skills": [
+        "SOX ITGC",
+        "FDICIA",
+        "PCI DSS",
+        "NIST",
+        "ISO 27001",
+        "HIPAA",
+        "FFIEC"
+      ]
+    },
+    {
+      "category": "Tools",
+      "note": "GRC, ticketing, scanning and low-code platforms used day to day",
       "icon": "fas fa-toolbox",
       "color": "#B197FC",
       "skills": [
@@ -103,26 +90,8 @@
         "Smartsheet",
         "Rapid7",
         "Qualys",
-        "Wazuh",
-        "Elastic / ELK",
-        "Docker",
-        "Git & GitHub"
-      ]
-    },
-    {
-      "category": "Security Operations",
-      "note": "Detection and response work from the SOC and SIEM projects",
-      "icon": "fas fa-tower-broadcast",
-      "color": "#F08A5D",
-      "skills": [
-        "SIEM Engineering",
-        "SOC Operations",
-        "Threat Detection",
-        "Incident Response",
-        "MITRE ATT&CK",
-        "Sigma Detection Rules",
-        "Endpoint Monitoring",
-        "Security Automation (SOAR)"
+        "Power Apps",
+        "Power Automate"
       ]
     }
   ]
