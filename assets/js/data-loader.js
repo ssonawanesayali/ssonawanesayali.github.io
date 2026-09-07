@@ -285,8 +285,13 @@
                 const school = edu0.school || edu0.institution;
                 facts.push(['Education', esc(edu0.degree) + (isStr(school) ? ` · ${esc(school)}` : '')]);
             }
+            // Prefer an explicit specialties list; fall back to the first skills
+            // category, which is only ever an approximation of it.
+            const specialties = arr(about.specialties).filter(isStr);
             const cat0 = arr(d.skills && d.skills.categories)[0];
-            if (cat0 && arr(cat0.skills).length) {
+            if (specialties.length) {
+                facts.push(['Specialties', specialties.map(esc).join(' · ')]);
+            } else if (cat0 && arr(cat0.skills).length) {
                 facts.push(['Specialties', arr(cat0.skills).slice(0, 4).map(esc).join(' · ')]);
             }
             facts.push(['Open to', isStr(title) ? `${esc(title)} roles` : 'New opportunities']);
