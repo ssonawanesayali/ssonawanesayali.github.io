@@ -3,25 +3,26 @@
   "sectionTitle": "About Me",
   "image": "assets/images/profile.jpg",
   "paragraphs": [
-    "CISA-certified Technology Audit and Information Security Risk professional with experience in ITGC assessments, application controls, SDLC reviews, and security risk evaluations across financial services and enterprise environments.",
-    "Skilled in control testing, technology risk assessment, data analytics, and AI-powered automation to improve audit quality and drive remediation."
+    "CISA-certified technology risk and compliance professional working across cybersecurity, governance and risk management, and audit automation, in financial services and enterprise environments.",
+    "Experience spans IT general controls, application and cloud security reviews, vulnerability management, incident investigation, and frameworks including SOX, PCI DSS, NIST, ISO 27001 and HIPAA.",
+    "I pair control testing with SQL, data analytics and AI-driven automation to cut manual review effort and move findings to closure faster."
   ],
   "statistics": [
     {
       "icon": "fas fa-briefcase",
-      "value": "5+",
+      "value": "4+",
       "label": "Years Experience",
       "color": "#FF6B6B"
     },
     {
       "icon": "fas fa-project-diagram",
-      "value": "17",
+      "value": "17+",
       "label": "Featured Projects",
       "color": "#4ECDC4"
     },
     {
       "icon": "fas fa-code",
-      "value": "41+",
+      "value": "67+",
       "label": "Technologies",
       "color": "#FFE66D"
     },

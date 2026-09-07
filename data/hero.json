@@ -2,10 +2,10 @@
   "_instructions": "Hero section content.",
   "greeting": "Hi, I'm",
   "name": "SAYALI SANJAY SONAWANE",
-  "title": "Technology Audit and Information Security Risk Professional",
-  "summary": "CISA-certified Technology Audit and Information Security Risk professional with experience in ITGC assessments, application controls, SDLC reviews, and security risk evaluations across financial services and enterprise environments. Skilled in control testing, technology risk assessment, data analytics, and AI-powered automation to improve audit quality and drive remediation.",
+  "title": "Cybersecurity, GRC & Technology Audit",
+  "summary": "CISA-certified technology risk and compliance professional working across cybersecurity, governance and risk management, and audit automation. Experience spans IT general controls, application and cloud security reviews, vulnerability management, and regulatory frameworks including SOX, PCI DSS, NIST, ISO 27001 and HIPAA, across financial services and enterprise environments. I pair control testing with SQL, data analytics and AI-driven automation to cut manual review effort and move findings to closure faster.",
   "avatarUrl": "assets/images/profile.jpg",
-  "tagline": "Technology Audit and Information Security Risk Professional",
+  "tagline": "Cybersecurity, GRC & Technology Audit",
   "headline": {
     "segments": [
       {
@@ -13,23 +13,23 @@
         "em": false
       },
       {
-        "text": "technology audit and information security risk",
+        "text": "security, risk and compliance",
         "em": true
       },
       {
-        "text": " where ",
+        "text": " programs where ",
         "em": false
       },
       {
-        "text": "SQL",
+        "text": "controls",
         "em": true
       },
       {
-        "text": " meets ",
+        "text": " meet ",
         "em": false
       },
       {
-        "text": "SOX ITGC",
+        "text": "data",
         "em": true
       },
       {
@@ -37,7 +37,7 @@
         "em": false
       },
       {
-        "text": "AuditBoard",
+        "text": "automation",
         "em": true
       },
       {
@@ -123,17 +123,17 @@
   "highlights": [
     {
       "icon": "fas fa-briefcase",
-      "text": "5+ Years Experience",
+      "text": "4+ Years Experience",
       "color": "#FF6B6B"
     },
     {
-      "icon": "fas fa-laptop-code",
-      "text": "Technology Audit and Information Security Risk Professional",
+      "icon": "fas fa-shield-halved",
+      "text": "Cybersecurity, GRC & Technology Audit",
       "color": "#4ECDC4"
     },
     {
       "icon": "fas fa-code",
-      "text": "SQL / SOX ITGC / FDICIA",
+      "text": "Controls · Cloud Security · Automation",
       "color": "#FFE66D"
     }
   ],
